@@ -1,0 +1,10 @@
+472  [main] INFO  c.g.m.MessagePatformApplication - Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 12632 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+474  [main] DEBUG c.g.m.MessagePatformApplication - Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+475  [main] INFO  c.g.m.MessagePatformApplication - No active profile set, falling back to default profiles: default
+2925 [main] INFO  c.g.m.MessagePatformApplication - Started MessagePatformApplication in 2.808 seconds (JVM running for 3.49)
+15397 [http-nio-8080-exec-2] DEBUG c.g.m.m.UserMapper.getJurisdiction - ==>  Preparing: select * from jurisdiction where domain_id = ? 
+15416 [http-nio-8080-exec-2] DEBUG c.g.m.m.UserMapper.getJurisdiction - ==> Parameters: 13(Integer)
+15440 [http-nio-8080-exec-2] DEBUG c.g.m.m.UserMapper.getJurisdiction - <==      Total: 1
+21647 [http-nio-8080-exec-3] DEBUG c.g.m.m.UserMapper.getJurisdiction - ==>  Preparing: select * from jurisdiction where domain_id = ? 
+21648 [http-nio-8080-exec-3] DEBUG c.g.m.m.UserMapper.getJurisdiction - ==> Parameters: 13(Integer)
+21660 [http-nio-8080-exec-3] DEBUG c.g.m.m.UserMapper.getJurisdiction - <==      Total: 1

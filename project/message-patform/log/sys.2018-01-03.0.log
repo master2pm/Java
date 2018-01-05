@@ -1,0 +1,1169 @@
+2018-01-03 11:26:09,505 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 26128 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 11:26:09,519 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 11:26:12,210 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 3.014 seconds (JVM running for 3.659)
+2018-01-03 11:35:22,456 ERROR (SpringApplication.java:771)- Application startup failed
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [FILE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:315)
+	at org.springframework.boot.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:276)
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:239)
+	at org.springframework.boot.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:212)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:122)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:74)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:54)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:296)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.gzbigone.messagepatform.MessagePatformApplication.main(MessagePatformApplication.java:12)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [FILE]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:162)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithSpecificConfig(AbstractLoggingSystem.java:66)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:56)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:115)
+	at org.springframework.boot.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:308)
+	... 14 common frames omitted
+2018-01-03 11:35:47,883 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 2000 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 11:35:47,885 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 11:35:47,885 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 11:35:47,927 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31368b99: startup date [Wed Jan 03 11:35:47 CST 2018]; root of context hierarchy
+2018-01-03 11:35:48,039 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 11:35:48,279 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 11:35:48,891 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 11:35:48,901 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 11:35:48,902 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 11:35:49,009 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 11:35:49,009 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1083 ms
+2018-01-03 11:35:49,145 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 11:35:49,148 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 11:35:49,149 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 11:35:49,149 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 11:35:49,149 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 11:35:49,149 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 11:35:49,929 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31368b99: startup date [Wed Jan 03 11:35:47 CST 2018]; root of context hierarchy
+2018-01-03 11:35:49,968 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 11:35:49,970 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 11:35:49,971 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 11:35:49,993 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:35:49,993 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:35:50,019 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:35:50,215 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 11:35:50,227 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 11:35:50,236 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 11:35:50,247 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 11:35:50,263 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 11:35:50,266 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 2.852 seconds (JVM running for 3.502)
+2018-01-03 11:35:59,605 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 11:35:59,605 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 11:35:59,632 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-01-03 11:36:06,819 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 11:36:06,835 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 11:36:06,857 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 11:45:25,573 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 11:45:25,574 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 11:45:25,587 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 11:45:56,103 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 11:45:56,105 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 11:45:56,121 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 11:46:03,585 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 7796 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 11:46:03,587 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 11:46:03,588 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 11:46:03,639 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31368b99: startup date [Wed Jan 03 11:46:03 CST 2018]; root of context hierarchy
+2018-01-03 11:46:03,698 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 11:46:04,061 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 11:46:04,702 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 11:46:04,712 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 11:46:04,712 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 11:46:04,826 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 11:46:04,826 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1187 ms
+2018-01-03 11:46:04,964 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 11:46:04,967 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 11:46:04,968 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 11:46:04,968 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 11:46:04,968 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 11:46:04,968 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 11:46:05,779 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31368b99: startup date [Wed Jan 03 11:46:03 CST 2018]; root of context hierarchy
+2018-01-03 11:46:05,821 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 11:46:05,823 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 11:46:05,823 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 11:46:05,848 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:46:05,848 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:46:05,874 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:46:06,079 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 11:46:06,092 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 11:46:06,100 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 11:46:06,112 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 11:46:06,128 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 11:46:06,131 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 2.92 seconds (JVM running for 3.662)
+2018-01-03 11:46:11,407 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 11:46:11,407 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 11:46:11,425 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 18 ms
+2018-01-03 11:46:15,624 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 11:46:15,646 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 11:46:15,680 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 11:49:11,579 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 25476 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 11:49:11,583 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 11:49:11,583 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 11:49:11,629 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31368b99: startup date [Wed Jan 03 11:49:11 CST 2018]; root of context hierarchy
+2018-01-03 11:49:11,759 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 11:49:12,003 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 11:49:12,616 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 11:49:12,626 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 11:49:12,627 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 11:49:12,731 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 11:49:12,731 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1102 ms
+2018-01-03 11:49:12,865 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 11:49:12,869 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 11:49:12,870 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 11:49:12,870 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 11:49:12,870 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 11:49:12,870 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 11:49:13,658 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31368b99: startup date [Wed Jan 03 11:49:11 CST 2018]; root of context hierarchy
+2018-01-03 11:49:13,696 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 11:49:13,698 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 11:49:13,698 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 11:49:13,721 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:49:13,721 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:49:13,746 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:49:13,944 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 11:49:13,954 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 11:49:13,963 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 11:49:13,975 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 11:49:13,990 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 11:49:13,993 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 2.747 seconds (JVM running for 3.396)
+2018-01-03 11:49:17,793 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 11:49:17,793 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 11:49:17,817 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 23 ms
+2018-01-03 11:49:46,924 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 11:49:46,939 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 11:49:46,968 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 11:50:12,843 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 14472 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 11:50:12,846 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 11:50:12,846 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 11:50:12,900 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31368b99: startup date [Wed Jan 03 11:50:12 CST 2018]; root of context hierarchy
+2018-01-03 11:50:12,989 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 11:50:13,253 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 11:50:13,869 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 11:50:13,879 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 11:50:13,880 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 11:50:13,986 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 11:50:13,986 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1086 ms
+2018-01-03 11:50:14,116 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 11:50:14,119 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 11:50:14,120 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 11:50:14,120 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 11:50:14,120 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 11:50:14,120 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 11:50:14,920 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@31368b99: startup date [Wed Jan 03 11:50:12 CST 2018]; root of context hierarchy
+2018-01-03 11:50:14,960 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 11:50:14,962 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 11:50:14,962 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 11:50:14,985 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:50:14,985 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:50:15,011 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 11:50:15,206 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 11:50:15,217 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 11:50:15,226 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 11:50:15,237 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 11:50:15,254 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 11:50:15,257 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 2.754 seconds (JVM running for 3.397)
+2018-01-03 11:50:24,878 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 11:50:24,879 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 11:50:24,913 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 34 ms
+2018-01-03 11:50:28,928 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 11:50:28,945 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 11:50:28,965 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 17:31:45,549 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 21220 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 17:31:45,553 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 17:31:45,553 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 17:31:45,597 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d167f58: startup date [Wed Jan 03 17:31:45 CST 2018]; root of context hierarchy
+2018-01-03 17:31:45,682 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 17:31:46,202 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 17:31:46,994 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 17:31:47,005 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 17:31:47,005 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 17:31:47,130 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 17:31:47,130 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1533 ms
+2018-01-03 17:31:47,422 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 17:31:47,422 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 17:31:47,422 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 17:31:47,423 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 17:31:47,423 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 17:31:47,423 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 17:31:47,423 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 17:31:47,423 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 17:31:47,423 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 17:31:47,423 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 17:31:47,424 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 17:31:47,451 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:31:47,451 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 17:31:47,451 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 17:31:47,451 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 17:31:47,452 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:31:47,452 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 17:31:47,452 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 17:31:47,453 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 17:31:47,453 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8082]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 17:31:47,454 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 17:31:47,455 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 17:31:47,455 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 17:31:47,455 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 17:31:47,456 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8082]
+2018-01-03 17:31:47,457 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:31:47,457 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:31:47,457 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:31:47,457 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:31:47,458 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 17:31:47,458 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 17:31:47,458 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 17:31:47,458 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 17:31:47,458 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 17:31:47,458 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 17:31:47,458 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 17:31:47,458 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 17:31:47,458 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:31:47,459 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 17:31:47,461 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 17:31:47,461 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 17:31:47,462 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 17:31:47,462 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 17:31:47,462 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:31:47,462 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:31:47,462 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:31:48,652 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d167f58: startup date [Wed Jan 03 17:31:45 CST 2018]; root of context hierarchy
+2018-01-03 17:31:48,708 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 17:31:48,709 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 17:31:48,711 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 17:31:48,712 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 17:31:48,745 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:31:48,745 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:31:48,785 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:31:49,252 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 17:31:49,266 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:31:49,280 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:31:49,296 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 17:31:49,319 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 17:31:49,323 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 4.289 seconds (JVM running for 5.12)
+2018-01-03 17:32:50,163 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 17:32:50,164 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 17:32:50,190 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-01-03 17:32:50,201 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 17:32:50,201 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8082/home/index?orgId=31948
+2018-01-03 17:32:50,201 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8082%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 17:33:36,198 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 17:33:36,198 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8082/home/index?orgId=31948
+2018-01-03 17:33:36,198 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8082%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 17:33:57,285 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 11808 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 17:33:57,289 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 17:33:57,290 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 17:33:57,331 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cc558c6: startup date [Wed Jan 03 17:33:57 CST 2018]; root of context hierarchy
+2018-01-03 17:33:57,399 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 17:33:57,781 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 17:33:58,613 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 17:33:58,624 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 17:33:58,625 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 17:33:58,743 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 17:33:58,743 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1412 ms
+2018-01-03 17:33:58,949 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 17:33:58,950 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 17:33:58,950 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 17:33:58,950 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 17:33:58,950 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 17:33:58,950 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 17:33:58,950 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 17:33:58,951 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 17:33:58,951 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 17:33:58,951 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 17:33:58,951 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 17:33:58,972 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:33:58,973 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 17:33:58,973 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 17:33:58,973 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 17:33:58,973 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:33:58,973 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 17:33:58,973 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 17:33:58,974 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 17:33:58,974 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 17:33:58,975 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:33:58,975 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:33:58,975 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:33:58,975 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:33:58,975 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:33:58,975 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 17:33:58,975 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:33:58,975 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 17:33:58,976 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 17:33:58,976 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 17:33:58,976 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 17:33:58,976 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 17:33:58,976 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 17:33:58,977 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:33:58,977 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:33:58,977 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:33:58,977 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:33:58,978 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:33:58,978 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 17:33:58,978 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 17:33:58,978 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 17:33:58,978 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 17:33:58,978 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 17:33:58,978 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 17:33:58,978 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 17:33:58,979 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 17:33:58,979 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:33:58,979 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 17:33:59,071 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 17:33:59,071 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 17:33:59,071 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 17:33:59,071 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 17:33:59,072 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:33:59,072 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:33:59,072 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:33:59,866 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6cc558c6: startup date [Wed Jan 03 17:33:57 CST 2018]; root of context hierarchy
+2018-01-03 17:33:59,928 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 17:33:59,929 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 17:33:59,930 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 17:33:59,931 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 17:33:59,978 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:33:59,978 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:34:00,019 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:34:00,372 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 17:34:00,386 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:34:00,408 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:34:00,424 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 17:34:00,446 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 17:34:00,450 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 3.675 seconds (JVM running for 4.433)
+2018-01-03 17:34:29,540 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 17:34:29,540 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 17:34:29,566 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-01-03 17:34:29,576 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 17:34:29,576 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8080/home/index?orgId=31948
+2018-01-03 17:34:29,576 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8080%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 17:34:37,972 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 17:34:38,276 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 17:34:38,436 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 17:38:01,070 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 17:38:01,072 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 17:38:01,087 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 17:38:15,852 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 16892 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 17:38:15,856 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 17:38:15,856 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 17:38:15,901 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e383572: startup date [Wed Jan 03 17:38:15 CST 2018]; root of context hierarchy
+2018-01-03 17:38:15,984 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 17:38:16,331 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 17:38:17,100 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 17:38:17,112 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 17:38:17,113 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 17:38:17,322 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 17:38:17,322 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1421 ms
+2018-01-03 17:38:17,537 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 17:38:17,537 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 17:38:17,537 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 17:38:17,537 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 17:38:17,538 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 17:38:17,538 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 17:38:17,538 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 17:38:17,538 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 17:38:17,538 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 17:38:17,538 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 17:38:17,538 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 17:38:17,559 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:38:17,560 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 17:38:17,560 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 17:38:17,560 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 17:38:17,560 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:38:17,560 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 17:38:17,560 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 17:38:17,561 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 17:38:17,561 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 17:38:17,561 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:38:17,562 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:38:17,562 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:38:17,562 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:38:17,562 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:38:17,562 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 17:38:17,562 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:38:17,563 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 17:38:17,563 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 17:38:17,563 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 17:38:17,563 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 17:38:17,563 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 17:38:17,563 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 17:38:17,564 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:38:17,564 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:38:17,565 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:38:17,565 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:38:17,565 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:38:17,565 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 17:38:17,565 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 17:38:17,565 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 17:38:17,565 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 17:38:17,565 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 17:38:17,565 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 17:38:17,566 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 17:38:17,566 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 17:38:17,566 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:38:17,566 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 17:38:17,568 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 17:38:17,568 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 17:38:17,569 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 17:38:17,569 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 17:38:17,569 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:38:17,569 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:38:17,569 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:38:18,570 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e383572: startup date [Wed Jan 03 17:38:15 CST 2018]; root of context hierarchy
+2018-01-03 17:38:18,628 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-01-03 17:38:18,629 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 17:38:18,631 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 17:38:18,631 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 17:38:18,664 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:38:18,664 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:38:18,713 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:38:19,068 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 17:38:19,084 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:38:19,094 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:38:19,108 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 17:38:19,135 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 17:38:19,141 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 3.825 seconds (JVM running for 4.823)
+2018-01-03 17:38:28,749 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 17:38:28,749 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 17:38:28,778 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-01-03 17:38:28,787 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 17:38:28,788 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8080/home/index?orgId=31948
+2018-01-03 17:38:28,788 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8080%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 17:38:36,444 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 17:38:36,720 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 17:38:36,878 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 17:47:48,089 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 16380 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 17:47:48,092 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 17:47:48,093 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 17:47:48,146 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b41dd5c: startup date [Wed Jan 03 17:47:48 CST 2018]; root of context hierarchy
+2018-01-03 17:47:48,234 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 17:47:48,554 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 17:47:49,336 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 17:47:49,350 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 17:47:49,352 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 17:47:49,575 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 17:47:49,575 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1429 ms
+2018-01-03 17:47:49,785 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 17:47:49,786 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 17:47:49,786 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 17:47:49,786 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 17:47:49,786 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 17:47:49,786 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 17:47:49,786 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 17:47:49,786 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 17:47:49,786 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 17:47:49,786 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 17:47:49,787 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 17:47:49,811 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:47:49,812 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 17:47:49,812 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 17:47:49,812 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 17:47:49,812 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:47:49,812 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 17:47:49,812 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 17:47:49,814 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 17:47:49,814 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 17:47:49,814 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:47:49,815 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:47:49,815 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:47:49,815 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:47:49,815 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:47:49,815 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 17:47:49,815 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:47:49,816 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 17:47:49,816 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 17:47:49,816 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 17:47:49,816 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 17:47:49,816 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 17:47:49,816 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 17:47:49,818 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:47:49,818 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:47:49,818 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:47:49,818 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:47:49,819 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:47:49,819 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 17:47:49,819 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 17:47:49,819 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 17:47:49,819 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 17:47:49,819 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 17:47:49,819 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 17:47:49,820 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 17:47:49,820 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 17:47:49,820 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:47:49,820 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 17:47:49,823 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 17:47:49,823 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 17:47:49,824 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 17:47:49,824 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 17:47:49,824 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:47:49,824 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:47:49,824 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:47:50,769 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4b41dd5c: startup date [Wed Jan 03 17:47:48 CST 2018]; root of context hierarchy
+2018-01-03 17:47:50,831 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-01-03 17:47:50,832 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/getUser],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 17:47:50,834 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 17:47:50,834 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 17:47:50,884 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:47:50,884 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:47:50,930 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:47:51,297 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 17:47:51,311 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:47:51,322 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:47:51,339 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 17:47:51,375 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 17:47:51,382 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 3.793 seconds (JVM running for 4.543)
+2018-01-03 17:48:02,675 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 17:48:02,676 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 17:48:02,701 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-01-03 17:48:02,711 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 17:48:02,711 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8080/home/index?orgId=31948
+2018-01-03 17:48:02,711 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8080%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 17:48:12,841 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 17:48:13,117 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 17:48:13,277 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 17:48:17,284 ERROR (DirectJDKLog.java:181)- Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.RuntimeException: com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.util.ArrayList out of START_OBJECT token
+ at [Source: {"timestamp":1514972921846,"status":405,"error":"Method Not Allowed","message":"Request method 'GET' not supported","path":"/api/org/domain/46618"}; line: 1, column: 1]] with root cause
+com.fasterxml.jackson.databind.JsonMappingException: Can not deserialize instance of java.util.ArrayList out of START_OBJECT token
+ at [Source: {"timestamp":1514972921846,"status":405,"error":"Method Not Allowed","message":"Request method 'GET' not supported","path":"/api/org/domain/46618"}; line: 1, column: 1]
+	at com.fasterxml.jackson.databind.JsonMappingException.from(JsonMappingException.java:270)
+	at com.fasterxml.jackson.databind.DeserializationContext.reportMappingException(DeserializationContext.java:1234)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1122)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnexpectedToken(DeserializationContext.java:1075)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.handleNonArray(CollectionDeserializer.java:338)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:269)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:259)
+	at com.fasterxml.jackson.databind.deser.std.CollectionDeserializer.deserialize(CollectionDeserializer.java:26)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:3814)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:2877)
+	at com.gzbigone.messagepatform.utils.HttpClientService.getMapByUrlOutArrery(HttpClientService.java:256)
+	at com.gzbigone.messagepatform.utils.HttpClientUtil.getAppByUserId(HttpClientUtil.java:71)
+	at com.gzbigone.messagepatform.controller.HomeController.Index(HomeController.java:47)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:483)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.gzbigone.messagepatform.config.MyCORSFilter.doFilter(MyCORSFilter.java:30)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.jasig.cas.client.util.AssertionThreadLocalFilter.doFilter(AssertionThreadLocalFilter.java:50)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.jasig.cas.client.util.HttpServletRequestWrapperFilter.doFilter(HttpServletRequestWrapperFilter.java:70)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.gzbigone.messagepatform.config.CasFilter.doFilter(CasFilter.java:147)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.jasig.cas.client.validation.AbstractTicketValidationFilter.doFilter(AbstractTicketValidationFilter.java:238)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.jasig.cas.client.session.SingleSignOutFilter.doFilter(SingleSignOutFilter.java:100)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:478)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2018-01-03 17:48:52,853 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 14480 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 17:48:52,857 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 17:48:52,857 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 17:48:52,917 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66c61024: startup date [Wed Jan 03 17:48:52 CST 2018]; root of context hierarchy
+2018-01-03 17:48:53,013 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 17:48:53,303 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 17:48:54,091 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 17:48:54,102 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 17:48:54,103 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 17:48:54,308 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 17:48:54,308 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1392 ms
+2018-01-03 17:48:54,510 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 17:48:54,510 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 17:48:54,511 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 17:48:54,511 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 17:48:54,511 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 17:48:54,511 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 17:48:54,511 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 17:48:54,511 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 17:48:54,511 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 17:48:54,511 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 17:48:54,512 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 17:48:54,534 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:48:54,534 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 17:48:54,535 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 17:48:54,535 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 17:48:54,535 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:48:54,535 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 17:48:54,535 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 17:48:54,536 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 17:48:54,536 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 17:48:54,536 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:48:54,537 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:48:54,537 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:48:54,537 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:48:54,537 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:48:54,537 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 17:48:54,537 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:48:54,538 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 17:48:54,538 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 17:48:54,538 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 17:48:54,538 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 17:48:54,538 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 17:48:54,538 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 17:48:54,539 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:48:54,539 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:48:54,539 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:48:54,540 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:48:54,540 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:48:54,540 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 17:48:54,540 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 17:48:54,540 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 17:48:54,541 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 17:48:54,541 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 17:48:54,541 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 17:48:54,541 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 17:48:54,541 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 17:48:54,541 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:48:54,541 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 17:48:54,543 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 17:48:54,543 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 17:48:54,543 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 17:48:54,543 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 17:48:54,543 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:48:54,544 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:48:54,544 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:48:55,350 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@66c61024: startup date [Wed Jan 03 17:48:52 CST 2018]; root of context hierarchy
+2018-01-03 17:48:55,410 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-01-03 17:48:55,411 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/getUser],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 17:48:55,413 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 17:48:55,413 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 17:48:55,560 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:48:55,560 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:48:55,611 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:48:56,086 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 17:48:56,103 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:48:56,116 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:48:56,131 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 17:48:56,155 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 17:48:56,160 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 3.822 seconds (JVM running for 4.561)
+2018-01-03 17:48:57,883 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 17:48:57,883 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 17:48:57,908 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-01-03 17:48:57,919 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 17:48:57,919 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8080/home/index?orgId=31948
+2018-01-03 17:48:57,919 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8080%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 17:48:59,537 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 17:48:59,552 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 17:48:59,572 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 17:49:35,114 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 25252 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 17:49:35,118 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 17:49:35,118 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 17:49:35,163 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61544ae6: startup date [Wed Jan 03 17:49:35 CST 2018]; root of context hierarchy
+2018-01-03 17:49:35,270 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 17:49:35,586 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 17:49:36,403 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 17:49:36,414 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 17:49:36,415 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 17:49:36,627 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 17:49:36,627 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1464 ms
+2018-01-03 17:49:36,829 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 17:49:36,830 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 17:49:36,830 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 17:49:36,830 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 17:49:36,830 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 17:49:36,830 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 17:49:36,830 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 17:49:36,831 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 17:49:36,831 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 17:49:36,831 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 17:49:36,831 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 17:49:36,857 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:49:36,857 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 17:49:36,858 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 17:49:36,858 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 17:49:36,858 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:49:36,858 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 17:49:36,858 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 17:49:36,859 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 17:49:36,859 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 17:49:36,860 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:49:36,860 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:49:36,860 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:49:36,860 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:49:36,861 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:49:36,861 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 17:49:36,861 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:49:36,861 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 17:49:36,862 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 17:49:36,862 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 17:49:36,862 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 17:49:36,862 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 17:49:36,862 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 17:49:36,863 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 17:49:36,863 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 17:49:36,864 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 17:49:36,864 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 17:49:36,864 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 17:49:36,864 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 17:49:36,864 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 17:49:36,864 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 17:49:36,864 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 17:49:36,864 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 17:49:36,865 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 17:49:36,865 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 17:49:36,865 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 17:49:36,865 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 17:49:36,865 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 17:49:36,867 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 17:49:36,867 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 17:49:36,867 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 17:49:36,867 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 17:49:36,868 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:49:36,868 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 17:49:36,868 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 17:49:37,854 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61544ae6: startup date [Wed Jan 03 17:49:35 CST 2018]; root of context hierarchy
+2018-01-03 17:49:37,911 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-01-03 17:49:37,912 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/getUser],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 17:49:37,914 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 17:49:37,914 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 17:49:37,957 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:49:37,957 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:49:37,999 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 17:49:38,351 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 17:49:38,366 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:49:38,377 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 17:49:38,393 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 17:49:38,415 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 17:49:38,420 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 3.784 seconds (JVM running for 4.558)
+2018-01-03 17:49:42,340 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 17:49:42,340 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 17:49:42,369 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-01-03 17:49:42,379 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 17:49:42,379 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8080/home/index?orgId=31948
+2018-01-03 17:49:42,380 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8080%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 17:49:43,776 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction where domain_id = ? 
+2018-01-03 17:49:43,793 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 13(Integer)
+2018-01-03 17:49:43,811 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 1
+2018-01-03 18:04:51,191 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 8700 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 18:04:51,195 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 18:04:51,195 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 18:04:51,245 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@558bdf1f: startup date [Wed Jan 03 18:04:51 CST 2018]; root of context hierarchy
+2018-01-03 18:04:51,333 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 18:04:51,623 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 18:04:52,400 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 18:04:52,411 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 18:04:52,412 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 18:04:52,535 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 18:04:52,535 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1290 ms
+2018-01-03 18:04:52,739 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 18:04:52,740 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 18:04:52,740 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 18:04:52,740 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 18:04:52,741 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 18:04:52,741 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 18:04:52,741 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 18:04:52,741 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 18:04:52,741 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 18:04:52,741 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 18:04:52,741 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 18:04:52,763 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:04:52,763 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 18:04:52,763 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 18:04:52,763 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 18:04:52,763 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 18:04:52,763 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 18:04:52,764 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 18:04:52,764 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 18:04:52,764 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 18:04:52,765 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 18:04:52,765 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 18:04:52,765 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:04:52,765 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 18:04:52,765 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 18:04:52,766 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 18:04:52,766 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 18:04:52,766 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 18:04:52,766 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 18:04:52,766 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 18:04:52,766 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 18:04:52,766 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 18:04:52,766 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 18:04:52,769 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 18:04:52,769 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 18:04:52,769 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:04:52,769 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 18:04:52,770 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 18:04:52,770 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 18:04:52,770 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 18:04:52,770 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 18:04:52,770 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 18:04:52,770 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 18:04:52,770 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 18:04:52,770 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 18:04:52,770 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 18:04:52,771 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 18:04:52,771 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 18:04:52,773 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 18:04:52,774 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 18:04:52,774 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 18:04:52,774 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 18:04:52,774 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 18:04:52,774 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 18:04:52,774 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 18:04:53,754 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@558bdf1f: startup date [Wed Jan 03 18:04:51 CST 2018]; root of context hierarchy
+2018-01-03 18:04:53,814 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-01-03 18:04:53,815 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/getUser],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 18:04:53,817 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 18:04:53,817 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 18:04:53,853 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:04:53,854 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:04:53,898 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:04:54,247 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 18:04:54,262 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 18:04:54,273 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 18:04:54,287 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 18:04:54,307 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 18:04:54,311 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 3.594 seconds (JVM running for 4.322)
+2018-01-03 18:05:13,212 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 18:05:13,212 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 18:05:13,240 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-01-03 18:05:13,259 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 18:05:13,259 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8080/home/index?orgId=31948
+2018-01-03 18:05:13,259 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8080%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 18:05:17,912 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction 
+2018-01-03 18:05:17,930 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-01-03 18:05:17,950 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2018-01-03 18:05:55,591 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction 
+2018-01-03 18:05:55,592 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-01-03 18:05:55,604 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2018-01-03 18:06:58,379 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction 
+2018-01-03 18:06:58,380 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-01-03 18:06:58,477 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2018-01-03 18:08:19,555 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 19932 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 18:08:19,564 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 18:08:19,564 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 18:08:19,620 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1603cd68: startup date [Wed Jan 03 18:08:19 CST 2018]; root of context hierarchy
+2018-01-03 18:08:19,740 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 18:08:20,106 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 18:08:20,982 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 18:08:20,990 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 18:08:20,991 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 18:08:21,114 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 18:08:21,114 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1495 ms
+2018-01-03 18:08:21,430 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 18:08:21,430 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 18:08:21,431 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 18:08:21,431 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 18:08:21,431 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 18:08:21,431 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 18:08:21,431 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 18:08:21,431 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 18:08:21,431 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 18:08:21,431 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 18:08:21,432 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 18:08:21,457 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:08:21,457 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 18:08:21,457 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 18:08:21,458 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 18:08:21,458 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 18:08:21,459 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 18:08:21,459 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 18:08:21,460 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 18:08:21,460 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 18:08:21,460 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 18:08:21,461 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 18:08:21,461 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:08:21,461 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 18:08:21,461 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 18:08:21,500 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 18:08:21,500 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 18:08:21,500 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 18:08:21,500 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 18:08:21,501 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 18:08:21,501 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 18:08:21,501 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 18:08:21,501 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 18:08:21,502 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 18:08:21,502 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 18:08:21,502 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:08:21,502 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 18:08:21,503 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 18:08:21,504 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 18:08:21,506 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 18:08:21,506 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 18:08:21,506 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 18:08:21,506 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 18:08:21,506 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 18:08:21,507 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 18:08:21,507 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 18:08:22,441 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1603cd68: startup date [Wed Jan 03 18:08:19 CST 2018]; root of context hierarchy
+2018-01-03 18:08:22,502 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-01-03 18:08:22,503 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/getUser],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 18:08:22,505 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 18:08:22,506 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 18:08:22,543 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:08:22,543 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:08:22,589 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:08:23,060 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 18:08:23,079 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 18:08:23,095 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 18:08:23,112 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 18:08:23,136 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 18:08:23,143 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 4.074 seconds (JVM running for 4.868)
+2018-01-03 18:08:31,128 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 18:08:31,128 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 18:08:31,156 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-01-03 18:08:31,170 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 18:08:31,171 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8080/home/index?orgId=31948
+2018-01-03 18:08:31,171 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8080%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 18:08:35,825 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction 
+2018-01-03 18:08:35,844 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-01-03 18:08:35,868 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2018-01-03 18:09:40,185 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 2976 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 18:09:40,188 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 18:09:40,189 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 18:09:40,236 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2bb3058: startup date [Wed Jan 03 18:09:40 CST 2018]; root of context hierarchy
+2018-01-03 18:09:40,334 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 18:09:40,721 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 18:09:41,535 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 18:09:41,548 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 18:09:41,549 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 18:09:41,760 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 18:09:41,761 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1525 ms
+2018-01-03 18:09:41,982 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 18:09:41,983 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 18:09:41,983 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 18:09:41,983 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 18:09:41,983 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 18:09:41,983 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 18:09:41,983 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 18:09:41,983 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 18:09:41,983 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 18:09:41,984 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 18:09:41,984 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 18:09:42,010 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:09:42,010 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 18:09:42,011 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 18:09:42,011 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 18:09:42,011 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 18:09:42,011 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 18:09:42,011 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 18:09:42,012 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 18:09:42,012 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 18:09:42,012 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 18:09:42,013 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 18:09:42,013 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:09:42,013 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 18:09:42,013 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 18:09:42,013 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 18:09:42,013 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 18:09:42,013 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 18:09:42,014 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 18:09:42,014 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 18:09:42,014 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 18:09:42,014 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 18:09:42,014 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 18:09:42,016 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 18:09:42,016 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 18:09:42,016 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:09:42,016 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 18:09:42,016 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 18:09:42,016 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 18:09:42,016 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 18:09:42,016 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 18:09:42,017 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 18:09:42,017 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 18:09:42,017 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 18:09:42,017 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 18:09:42,017 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 18:09:42,017 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 18:09:42,017 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 18:09:42,020 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 18:09:42,020 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 18:09:42,020 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 18:09:42,020 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 18:09:42,020 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 18:09:42,021 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 18:09:42,021 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 18:09:43,005 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2bb3058: startup date [Wed Jan 03 18:09:40 CST 2018]; root of context hierarchy
+2018-01-03 18:09:43,123 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-01-03 18:09:43,125 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/getUser],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 18:09:43,128 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 18:09:43,128 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 18:09:43,174 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:09:43,174 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:09:43,232 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:09:43,690 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 18:09:43,706 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 18:09:43,718 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 18:09:43,735 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 18:09:43,759 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 18:09:43,764 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 4.122 seconds (JVM running for 4.93)
+2018-01-03 18:09:50,253 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 18:09:50,254 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 18:09:50,276 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-01-03 18:09:50,289 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 18:09:50,290 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8080/home/index?orgId=31948
+2018-01-03 18:09:50,291 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8080%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 18:09:52,119 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction 
+2018-01-03 18:09:52,134 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-01-03 18:09:52,154 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
+2018-01-03 18:14:53,222 INFO (StartupInfoLogger.java:48)- Starting MessagePatformApplication on DESKTOP-PNP8EB3 with PID 18208 (E:\mh\message-patform\target\classes started by 39290 in E:\mh\message-patform)
+2018-01-03 18:14:53,225 DEBUG (StartupInfoLogger.java:51)- Running with Spring Boot v1.5.9.RELEASE, Spring v4.3.13.RELEASE
+2018-01-03 18:14:53,225 INFO (SpringApplication.java:593)- No active profile set, falling back to default profiles: default
+2018-01-03 18:14:53,285 INFO (AbstractApplicationContext.java:583)- Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61544ae6: startup date [Wed Jan 03 18:14:53 CST 2018]; root of context hierarchy
+2018-01-03 18:14:53,395 INFO (Version.java:30)- HV000001: Hibernate Validator 5.3.6.Final
+2018-01-03 18:14:53,723 WARN (ClassPathMapperScanner.java:166)- No MyBatis mapper was found in '[com.example.mapper]' package. Please check your configuration.
+2018-01-03 18:14:54,545 INFO (TomcatEmbeddedServletContainer.java:89)- Tomcat initialized with port(s): 8080 (http)
+2018-01-03 18:14:54,557 INFO (DirectJDKLog.java:179)- Starting service [Tomcat]
+2018-01-03 18:14:54,558 INFO (DirectJDKLog.java:179)- Starting Servlet Engine: Apache Tomcat/8.5.23
+2018-01-03 18:14:54,777 INFO (DirectJDKLog.java:179)- Initializing Spring embedded WebApplicationContext
+2018-01-03 18:14:54,777 INFO (EmbeddedWebApplicationContext.java:276)- Root WebApplicationContext: initialization completed in 1493 ms
+2018-01-03 18:14:54,992 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-01-03 18:14:54,993 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-01-03 18:14:54,993 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-01-03 18:14:54,993 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'requestContextFilter' to: [/*]
+2018-01-03 18:14:54,993 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'singleSignOutFilter' to urls: [/*]
+2018-01-03 18:14:54,993 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'cas20ProxyReceivingTicketValidationFilter' to urls: [/*]
+2018-01-03 18:14:54,994 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'casFilter' to urls: [/*]
+2018-01-03 18:14:54,994 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'httpServletRequestWrapperFilter' to urls: [/*]
+2018-01-03 18:14:54,994 INFO (AbstractFilterRegistrationBean.java:271)- Mapping filter: 'assertionThreadLocalFilter' to urls: [/*]
+2018-01-03 18:14:54,994 INFO (AbstractFilterRegistrationBean.java:258)- Mapping filter: 'myCORSFilter' to: [/*]
+2018-01-03 18:14:54,994 INFO (ServletRegistrationBean.java:190)- Mapping servlet: 'dispatcherServlet' to [/]
+2018-01-03 18:14:55,019 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:14:55,019 INFO (AbstractConfigurationFilter.java:108)- Property [logoutParameterName] not found.  Using default value [logoutRequest]
+2018-01-03 18:14:55,019 INFO (AbstractConfigurationFilter.java:108)- Property [frontLogoutParameterName] not found.  Using default value [SAMLRequest]
+2018-01-03 18:14:55,019 INFO (AbstractConfigurationFilter.java:108)- Property [relayStateParameterName] not found.  Using default value [RelayState]
+2018-01-03 18:14:55,019 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 18:14:55,020 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterOverPost] not found.  Using default value [false]
+2018-01-03 18:14:55,020 INFO (AbstractConfigurationFilter.java:108)- Property [eagerlyCreateSessions] not found.  Using default value [true]
+2018-01-03 18:14:55,020 INFO (AbstractConfigurationFilter.java:108)- Property [roleAttribute] not found.  Using default value [null]
+2018-01-03 18:14:55,020 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreCase] not found.  Using default value [false]
+2018-01-03 18:14:55,021 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 18:14:55,021 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 18:14:55,021 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:14:55,021 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 18:14:55,022 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 18:14:55,022 INFO (AbstractConfigurationFilter.java:74)- Property [casServerLoginUrl] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081/login]
+2018-01-03 18:14:55,022 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 18:14:55,022 INFO (AbstractConfigurationFilter.java:108)- Property [gateway] not found.  Using default value [false]
+2018-01-03 18:14:55,022 INFO (AbstractConfigurationFilter.java:108)- Property [ignorePattern] not found.  Using default value [null]
+2018-01-03 18:14:55,022 INFO (AbstractConfigurationFilter.java:108)- Property [ignoreUrlPatternType] not found.  Using default value [REGEX]
+2018-01-03 18:14:55,022 INFO (AbstractConfigurationFilter.java:74)- Property [excludePaths] loaded from FilterConfig.getInitParameter with value [^/user/.*,^/holiday/.*,^/examinationApproval/.*]
+2018-01-03 18:14:55,023 INFO (AbstractConfigurationFilter.java:108)- Property [gatewayStorageClass] not found.  Using default value [null]
+2018-01-03 18:14:55,023 INFO (AbstractConfigurationFilter.java:108)- Property [authenticationRedirectStrategyClass] not found.  Using default value [null]
+2018-01-03 18:14:55,024 INFO (AbstractConfigurationFilter.java:74)- Property [serverName] loaded from FilterConfig.getInitParameter with value [http://127.0.0.1:8080]
+2018-01-03 18:14:55,024 INFO (AbstractConfigurationFilter.java:108)- Property [service] not found.  Using default value [null]
+2018-01-03 18:14:55,024 INFO (AbstractConfigurationFilter.java:108)- Property [artifactParameterName] not found.  Using default value [ticket]
+2018-01-03 18:14:55,024 INFO (AbstractConfigurationFilter.java:108)- Property [serviceParameterName] not found.  Using default value [service]
+2018-01-03 18:14:55,024 INFO (AbstractConfigurationFilter.java:108)- Property [encodeServiceUrl] not found.  Using default value [true]
+2018-01-03 18:14:55,024 INFO (AbstractConfigurationFilter.java:108)- Property [proxyReceptorUrl] not found.  Using default value [null]
+2018-01-03 18:14:55,024 INFO (AbstractConfigurationFilter.java:108)- Property [proxyGrantingTicketStorageClass] not found.  Using default value [null]
+2018-01-03 18:14:55,024 INFO (AbstractConfigurationFilter.java:108)- Property [millisBetweenCleanUps] not found.  Using default value [60000]
+2018-01-03 18:14:55,025 INFO (AbstractConfigurationFilter.java:108)- Property [exceptionOnValidationFailure] not found.  Using default value [false]
+2018-01-03 18:14:55,025 INFO (AbstractConfigurationFilter.java:108)- Property [redirectAfterValidation] not found.  Using default value [true]
+2018-01-03 18:14:55,025 INFO (AbstractConfigurationFilter.java:108)- Property [useSession] not found.  Using default value [true]
+2018-01-03 18:14:55,025 INFO (AbstractConfigurationFilter.java:108)- Property [acceptAnyProxy] not found.  Using default value [null]
+2018-01-03 18:14:55,025 INFO (AbstractConfigurationFilter.java:108)- Property [allowedProxyChains] not found.  Using default value [null]
+2018-01-03 18:14:55,025 INFO (AbstractConfigurationFilter.java:74)- Property [casServerUrlPrefix] loaded from FilterConfig.getInitParameter with value [http://118.89.63.221:8081]
+2018-01-03 18:14:55,025 INFO (AbstractConfigurationFilter.java:108)- Property [ticketValidatorClass] not found.  Using default value [null]
+2018-01-03 18:14:55,028 INFO (AbstractConfigurationFilter.java:108)- Property [proxyCallbackUrl] not found.  Using default value [null]
+2018-01-03 18:14:55,028 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifier] not found.  Using default value [null]
+2018-01-03 18:14:55,028 INFO (AbstractConfigurationFilter.java:108)- Property [hostnameVerifierConfig] not found.  Using default value [null]
+2018-01-03 18:14:55,028 INFO (AbstractConfigurationFilter.java:108)- Property [sslConfigFile] not found.  Using default value [null]
+2018-01-03 18:14:55,028 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 18:14:55,028 INFO (AbstractConfigurationFilter.java:108)- Property [renew] not found.  Using default value [false]
+2018-01-03 18:14:55,028 INFO (AbstractConfigurationFilter.java:108)- Property [encoding] not found.  Using default value [null]
+2018-01-03 18:14:55,900 INFO (RequestMappingHandlerAdapter.java:534)- Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@61544ae6: startup date [Wed Jan 03 18:14:53 CST 2018]; root of context hierarchy
+2018-01-03 18:14:55,970 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/home/index],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.HomeController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.String)
+2018-01-03 18:14:55,971 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/user/getUser],methods=[GET]}" onto public java.lang.Object com.gzbigone.messagepatform.controller.UserController.Index(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse,java.lang.Integer)
+2018-01-03 18:14:55,973 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-01-03 18:14:56,088 INFO (AbstractHandlerMethodMapping.java:543)- Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-01-03 18:14:56,131 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:14:56,132 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:14:56,174 INFO (AbstractUrlHandlerMapping.java:362)- Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-01-03 18:14:56,581 INFO (MBeanExporter.java:431)- Registering beans for JMX exposure on startup
+2018-01-03 18:14:56,602 INFO (DirectJDKLog.java:179)- Initializing ProtocolHandler ["http-nio-8080"]
+2018-01-03 18:14:56,615 INFO (DirectJDKLog.java:179)- Starting ProtocolHandler ["http-nio-8080"]
+2018-01-03 18:14:56,629 INFO (DirectJDKLog.java:179)- Using a shared selector for servlet write/read
+2018-01-03 18:14:56,650 INFO (TomcatEmbeddedServletContainer.java:201)- Tomcat started on port(s): 8080 (http)
+2018-01-03 18:14:56,655 INFO (StartupInfoLogger.java:57)- Started MessagePatformApplication in 3.96 seconds (JVM running for 4.742)
+2018-01-03 18:15:03,947 INFO (DirectJDKLog.java:179)- Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-01-03 18:15:03,948 INFO (FrameworkServlet.java:489)- FrameworkServlet 'dispatcherServlet': initialization started
+2018-01-03 18:15:03,975 INFO (FrameworkServlet.java:508)- FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-01-03 18:15:03,987 DEBUG (CasFilter.java:162)- no ticket and no assertion found
+2018-01-03 18:15:03,988 DEBUG (CasFilter.java:170)- Constructed service url: http://127.0.0.1:8080/home/index?orgId=31948
+2018-01-03 18:15:03,988 DEBUG (CasFilter.java:175)- redirecting to "http://118.89.63.221:8081/login?service=http%3A%2F%2F127.0.0.1%3A8080%2Fhome%2Findex%3ForgId%3D31948"
+2018-01-03 18:15:08,611 DEBUG (BaseJdbcLogger.java:159)- ==>  Preparing: select * from jurisdiction 
+2018-01-03 18:15:08,629 DEBUG (BaseJdbcLogger.java:159)- ==> Parameters: 
+2018-01-03 18:15:08,663 DEBUG (BaseJdbcLogger.java:159)- <==      Total: 3
