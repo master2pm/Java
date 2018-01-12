@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.vobo.user.mapper.UserMapper">
+
+    <resultMap id="userMap" type="com.vobo.user.entity.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"></result>
+        <result property="password" column="password"></result>
+        <result property="gender" column="gender"></result>
+        <result property="realname" column="realname"></result>
+        <result property="phone" column="phone"></result>
+        <result property="bith" column="bith"></result>
+        <result property="idcard" column="idcard"></result>
+        <result property="email" column="email"></result>
+    </resultMap>
+
+
+    <sql id="user">
+        id,name,password,gender,realname,phone,bith,idcard,email
+    </sql>
+
+    <insert id="addUser" parameterType="com.vobo.user.entity.User">
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            SELECT replace(uuid(),"-","") FROM dual
+        </selectKey>
+        INSERT INTO
+        user
+        (<include refid="user"/>)
+        VALUES
+        (#{id},#{name},#{password},#{gender},#{realname},#{phone},#{bith},#{idcard},#{email})
+    </insert>
+    
+    <select id="sel" parameterType="java.util.Map" resultType="com.vobo.user.entity.User">
+        SELECT <include refid="user"/>
+        FROM user
+        <where>
+            <if test="name!=null">
+                name = #{name}
+            </if>
+            <if test="phone!=null">
+                phone = #{phone}
+            </if>
+            <if test="email!=null">
+                email = #{email}
+            </if>
+        </where>
+    </select>
+</mapper>
