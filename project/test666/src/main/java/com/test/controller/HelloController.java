@@ -1,6 +1,9 @@
 package com.test.controller;
 
 import com.test.service.IRegService;
+import io.swagger.annotations.ApiImplicitParam;
+import io.swagger.annotations.ApiImplicitParams;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
@@ -18,17 +21,26 @@ public class HelloController {
 
     @Autowired
     private IRegService regService;
+
+//    @ApiOperation(value = “接口说明”, httpMethod = “接口请求方式”, response = “接口返回参数类型”, notes = “接口发布说明
+    @ApiOperation(value="跳转到首页",httpMethod = "GET")
     @RequestMapping("/")
     String home(){
         return "index";
     }
 
+    @ApiOperation(value="跳转到登录页面",httpMethod = "GET")
     @RequestMapping("/login")
     String login(){
         return "login";
     }
 
-
+//@ApiParam(required = “是否必须参数”, name = “参数名称”, value = “参数具体描述”
+    @ApiOperation(value="登录接口",notes="通过账号和密码来登录",httpMethod = "GET")
+    @ApiImplicitParams({
+            @ApiImplicitParam(name="loginPwd",value="用户密码", required = true, dataType = "String"),
+            @ApiImplicitParam(name="userId",value="用户名", required = true, dataType = "String")
+    })
     @RequestMapping("/reg")
     @ResponseBody
     Boolean reg(@RequestParam("loginPwd")String loginNum, @RequestParam("userId") String userId){

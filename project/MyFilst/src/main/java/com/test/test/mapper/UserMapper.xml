@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.test.test.mapper.UserMapper">
+
+    <resultMap id="userMap" type="com.test.test.entity.User">
+        <id property="id" column="id"/>
+        <result property="name" column="name"></result>
+        <result property="password" column="password"></result>
+        <result property="phone" column="phone"></result>
+        <result property="bith" column="bith"></result>
+    </resultMap>
+
+    <insert id="addUser" parameterType="map">
+
+        <selectKey keyProperty="id" resultType="java.lang.String" order="BEFORE">
+            SELECT replace(uuid(),"-","") FROM dual
+        </selectKey>
+         INSERT INTO
+          user
+          (id,name,password)
+          VALUES
+          (#{id},#{name},#{password})
+
+    </insert>
+</mapper>
